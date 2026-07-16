@@ -1,0 +1,23 @@
+<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Surprise pour Jérémie</title>
+<style>
+body{margin:0;font-family:Arial;background:linear-gradient(135deg,#ffccd5,#ffe6ea);overflow:hidden;text-align:center}
+#gift{font-size:90px;cursor:pointer;margin-top:18vh;animation:b 1.2s infinite}
+@keyframes b{50%{transform:scale(1.1)}}
+#content{display:none;padding:20px}
+img{width:240px;height:240px;border-radius:50%;object-fit:cover;border:6px solid #fff;box-shadow:0 0 20px crimson}
+.msg{max-width:760px;margin:20px auto;background:#ffffffcc;padding:20px;border-radius:18px;line-height:1.7}
+.heart{position:fixed;top:-5%;font-size:24px;animation:f linear forwards}
+@keyframes f{to{top:105%;transform:rotate(360deg)}}
+</style></head><body>
+<div id="gift">🎁<br><small>Clique sur le cadeau</small></div>
+<div id="content">
+<h1>🎂 Joyeux anniversaire Jérémie NGANGA 🎂</h1>
+<img src="Jérémie.jpg">
+<div class="msg"><p>Mon amour Jérémie ❤️,</p><p>Aujourd'hui est un jour précieux. Je remercie Dieu pour ta vie et je te souhaite une année remplie de bonheur, de santé, de paix, de réussite et d'amour.</p><p>Merci d'être l'homme que tu es. Cette surprise t'est offerte avec tout mon cœur par ton amour <b>Félicité</b>.</p><p>Notre petit guerrier <b>Owen</b> se joint à moi pour te souhaiter un merveilleux anniversaire. 💖</p><h3>Je t'aime aujourd'hui, demain et pour toujours. ❤️</h3></div>
+<audio id="aud" controls autoplay loop><source src="VITAA_&_SLIMANE_-_Avant_toi_(Clip_Officiel)(128k).m4a" type="audio/mp4"></audio>
+</div>
+<script>
+gift.onclick=()=>{gift.style.display='none';content.style.display='block';document.getElementById('aud').play().catch(()=>{});}
+setInterval(()=>{let h=document.createElement('div');h.className='heart';h.textContent='❤️';h.style.left=Math.random()*100+'%';h.style.animationDuration=(3+Math.random()*4)+'s';document.body.appendChild(h);setTimeout(()=>h.remove(),7000)},180);
+</script></body></html>
